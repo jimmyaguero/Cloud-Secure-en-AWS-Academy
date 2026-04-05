@@ -1,0 +1,11 @@
+graph TD
+    subgraph "AWS Cloud - Blue Wave Secure"
+        S3[S3: Core Bancario - Cifrado/Privado]
+        CT[CloudTrail: Logs de Auditoría]
+        CFG[AWS Config: Cumplimiento]
+        CW[CloudWatch: Alarmas]
+    end
+    
+    S3 -- "Envía Eventos" --> CT
+    S3 -- "Monitoreo Reglas" --> CFG
+    CT -- "Métricas de Error" --> CW
