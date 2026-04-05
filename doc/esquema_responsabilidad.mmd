@@ -1,0 +1,15 @@
+graph TD
+    subgraph "Responsabilidad de AWS (Seguridad de la Nube)"
+        A[Infraestructura Global: Regiones, Zonas de Disponibilidad]
+        B[Hardware y Software de Computo, Almacenamiento y Red]
+    end
+
+    subgraph "Responsabilidad de Jimmy / Blue Wave (Seguridad En la Nube)"
+        C[Configuración de Red: Security Groups / ACLs]
+        D[Identidad y Acceso: IAM / Roles / Usuarios]
+        E[Protección de Datos: Cifrado y Block Public Access]
+        F[Seguridad del Código: Lógica de Aplicativos]
+    end
+
+    A --- C
+    B --- E
